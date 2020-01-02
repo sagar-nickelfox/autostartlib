@@ -80,7 +80,7 @@ object AutoStartDialog {
 
     fun startPowerSaverIntent(context: Context, msg: String) {
         val settings: SharedPreferences =
-            context.getSharedPreferences("AutoStartLibSagar2020", Context.MODE_PRIVATE)
+            context.getSharedPreferences(BuildConfig.LIBRARY_PACKAGE_NAME+"AutoStartLib", Context.MODE_PRIVATE)
         val skipMessage = settings.getBoolean("skipProtectedAppCheck", false)
         if (!skipMessage) {
             val editor = settings.edit()
