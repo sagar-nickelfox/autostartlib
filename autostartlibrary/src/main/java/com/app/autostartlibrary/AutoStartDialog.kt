@@ -1,11 +1,11 @@
 package com.app.autostartlibrary
 
 import android.R.string
-import android.app.AlertDialog
 import android.content.*
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.AppCompatCheckBox
 import java.util.*
 
@@ -96,7 +96,7 @@ object AutoStartDialog {
                     }
                     AlertDialog.Builder(context)
                         .setTitle(Build.MANUFACTURER + " Protected Apps")
-                        .setMessage("msg") //.setView(dontShowAgain)
+                        .setMessage(msg) //.setView(dontShowAgain)
                         .setCancelable(false)
                         .setPositiveButton(
                             "Go to settings"
